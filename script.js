@@ -1,8 +1,15 @@
-// document.querySelector(`h1`).innerHTML = `<strong> Bye </strong>`;
-$(`h1`).html(`<strong> Bye </strong>`); // jQuery
 
-// document.querySelectorAll(`button`).innerText = `Don't click me`;
-$(`button`).text(`Don't click me`); // jQuery
+// log to see the values of attributes in console
+console.log($(`img`).attr(`src`));
+console.log($(`img`).attr(`alt`));
+
+// manipulating attributes in jQuery
+
+$(`a`).attr(`href`, `https://www.yahoo.com`);
+$(`a`).attr(`href`, `https://mozilla.com`);
+console.log($(`a`).attr(`href`));
 
 
-// jQuery === BETTER
+// since class is also an attribute
+console.log($(`h1`).attr(`class`))
+
