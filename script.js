@@ -1,18 +1,18 @@
+// to apply event or style to a list of class in JS you must always use for loop
 
-// log to see the values of attributes in console
-console.log($(`img`).attr(`src`));
-console.log($(`img`).attr(`alt`));
+for (let i = 0; i < document.querySelectorAll(`button`).length; i++) {
+    // add event listener
+    document.querySelectorAll(`button`)[i].addEventListener(`click`, function() {
+        // what so do after the event
+        document.querySelectorAll(`button`)[i].style.backgroundColor = `blue`;
+    })    
 
-// manipulating attributes in jQuery
+}; // vanilla JS
 
-$(`a`).attr(`href`, `https://www.yahoo.com`);
-$(`a`).attr(`href`, `https://mozilla.com`);
-console.log($(`a`).attr(`href`));
+// ===
 
+// now in jQuery style
 
-
-// since class is also an attribute
-$(`h1`).addClass(`fountain`); // applying class in jQuery
-
-// the class="another" from html
-console.log($(`h1`).attr(`class`)) // display all classes applied
+$(`button`).click(function() {
+    $(`button`).css(`color`, `red`);
+}); // jQuery makes life easier
