@@ -1,6 +1,14 @@
-// this is how to set style in JavaScript using jQuery.
-// but it not best practice to keep CSS in JS
-// to in the next commit well create the style in CSS and using it here using jQuery
-$(`h1`).css(`color`, `red`);
+// $(`h1`).css(`fontSize`, `110px`);
 
-$(`button`).css(`backgroundImage`, `linear-gradient(160deg,white, lightblue, chartreuse)`);
+
+// how to add, remove and check it there is a class applied
+
+$(`h1`).addClass(`fountain another`);
+console.log($(`h1`).hasClass(`fountain`));
+
+$(`h1`).removeClass(`fountain`);
+console.log($(`h1`).hasClass(`fountain`));
+
+// to check the actual value of the property
+console.log($(`*`).css(`boxSizing`));
+

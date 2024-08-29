@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.fountain {
+  background-color: yellow;
+}
+
+.another {
+  font-family: cursive;
+}/*# sourceMappingURL=style.css.map */
