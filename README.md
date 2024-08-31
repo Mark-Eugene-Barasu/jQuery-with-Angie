@@ -2,7 +2,7 @@
 
 So, it is best practice to inject the jQuery CDN link at the bottom of body element, But before the link to JavaScript.
 
-now, if you inject the jQuery CDN link in the head, it will not work unless you type 
+now, if you inject the jQuery CDN link in the head, it will not work unless you type.
 
     $(document).ready(function(){
 
