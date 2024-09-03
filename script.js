@@ -1,17 +1,11 @@
+// jQuery creates properly groups each and every element
+// into its own DOM object
 
-// a in improved way to add event
-let h1 = $(`h1`); 
-h1.on(`mouseover`,  function(){
-    h1.css(`color`, `purple`);
-})
+if ($(`h1`) == document.querySelector(`h1`)){
+    console.log(`same`);
+} else {
+    console.log(`not same`);
+}
 
-// YOU NEVER HAVE TO MEMORIZE ANY OF THE CODE,
-// JUST KNOW THAT THEY EXIST AND WHAT THEY DO WHEN APPLIED
-
-// short assignment
-
-$(document).keypress(function(event) {
-    console.log(event.key);
-    // display the key output in h1 element
-    $(`h1`).text(event.key);
-});
+console.log($(`h1`));
+console.log(document.querySelector(`h1`))
