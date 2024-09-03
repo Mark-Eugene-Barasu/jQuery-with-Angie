@@ -1,5 +1,4 @@
 
-$(document).ready(function () {
-    
-    $(`h1`).css(`color`, `red`);
-})
+// here is the best practice instead
+
+$(`h1`).css(`color`, `red`);
