@@ -1,4 +1,4 @@
-
+// see last line
 // using .before, .after, .prepend, and .append
 
 $(`h1`).attr(`class`, `another fountain`)
@@ -15,3 +15,6 @@ $(`h1`).prepend(`<button>prepend</button>`)
 
 // also, append adds to the end of the element's content
 $(`h1`).append(`<button>append</button>`)
+
+// using .remote to remote every jQuery mutation
+$(`h1`).remove();
